@@ -15,7 +15,7 @@ local library = {
     scrolling = false;
     multiZindex = 200;
     toInvis = {};
-    libColor = Color3.fromRGB(214, 122, 377);
+    libColor = Color3.fromRGB(161,0,219);
     disabledcolor = Color3.fromRGB(233, 0, 0);
     blacklisted = {Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.UserInputType.MouseMovement}
 }
@@ -103,8 +103,8 @@ function library:addTab(name)
         for i,v in next, library.tabbuttons do
             local state = v == newButton
             if state then
-                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(214, 122, 377)})
-                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(214, 122, 377)})
+                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(161,0,219)})
+                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(161,0,219)})
             else
                 library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)})
                 library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 255)})
